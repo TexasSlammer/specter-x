@@ -1,0 +1,25 @@
+{
+  "sizes": [
+    {
+      "events": 10000,
+      "accepted": 10000,
+      "seconds": 1.52,
+      "throughput_eps": 6578,
+      "peak_rss_mb": 88.3
+    },
+    {
+      "events": 100000,
+      "accepted": 100000,
+      "seconds": 16.24,
+      "throughput_eps": 6158,
+      "peak_rss_mb": 362.3
+    },
+    {
+      "events": 1000000,
+      "accepted": 1000000,
+      "seconds": 172.49,
+      "throughput_eps": 5797,
+      "peak_rss_mb": 3006.2
+    }
+  ]
+}

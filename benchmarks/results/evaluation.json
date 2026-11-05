@@ -1,0 +1,94 @@
+{
+  "measured_at": "2026-11-05T06:40:50Z",
+  "permission_fixtures": {
+    "reachable_found": "7/7",
+    "denied_rejected": "5/5",
+    "pass": true
+  },
+  "detection": {
+    "scenarios_detected": "4/4",
+    "false_alerts_on_baseline": 0,
+    "baseline_fp_rate": "0.0000",
+    "per_scenario": {
+      "mfa_fatigue": {
+        "expected": [
+          "D1_mfa_fatigue",
+          "D2_new_device_signin",
+          "D4_risky_oauth_consent"
+        ],
+        "detected": [
+          "D1_mfa_fatigue",
+          "D2_new_device_signin",
+          "D4_risky_oauth_consent"
+        ],
+        "meets_min_score": true,
+        "pass": true
+      },
+      "service_account_abuse": {
+        "expected": [
+          "D6_service_account_interactive"
+        ],
+        "detected": [
+          "D2_new_device_signin",
+          "D6_service_account_interactive"
+        ],
+        "meets_min_score": true,
+        "pass": true
+      },
+      "impossible_travel": {
+        "expected": [
+          "D3_impossible_travel",
+          "D2_new_device_signin"
+        ],
+        "detected": [
+          "D2_new_device_signin",
+          "D3_impossible_travel"
+        ],
+        "meets_min_score": true,
+        "pass": true
+      },
+      "role_grant_abuse": {
+        "expected": [
+          "D5_role_assignment_anomaly",
+          "D2_new_device_signin"
+        ],
+        "detected": [
+          "D2_new_device_signin",
+          "D5_role_assignment_anomaly"
+        ],
+        "meets_min_score": true,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "ingestion_dedup": {
+    "first_pass_accepted": 288,
+    "replay_duplicates": 288,
+    "rows_after_replay": 288,
+    "pass": true
+  },
+  "api_authz": {
+    "matrix": {
+      "no_token": true,
+      "bad_token": true,
+      "analyst_read": true,
+      "analyst_respond_blocked": true,
+      "admin_respond_ok": true
+    },
+    "pass": true
+  },
+  "latency_ms": {
+    "identities_p50": 13.0,
+    "identities_p95": 15.2,
+    "identity_detail_p50": 8.5,
+    "identity_detail_p95": 10.0
+  },
+  "traceability": {
+    "alerts_checked": 10,
+    "event_refs": 18,
+    "resolved": 18,
+    "rate": "1.000",
+    "pass": true
+  }
+}
