@@ -1,0 +1,15 @@
+services:
+  specter-x:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # Demo tokens. Override for anything beyond localhost play.
+      SPECTER_TOKENS: "demo-analyst-token:analyst,demo-admin-token:admin"
+      DATABASE_URL: "sqlite:////data/specter.db"
+    volumes:
+      - specter-data:/data
+    restart: unless-stopped
+
+volumes:
+  specter-data:
