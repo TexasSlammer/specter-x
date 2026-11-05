@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>SPECTER X &mdash; Identity Attack Path Investigation</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">SPECTER&nbsp;<em>X</em></span>
+      <span class="brand-sub">Identity Attack Path Investigation</span>
+    </div>
+    <nav class="tabs" id="nav-tabs" aria-label="Views">
+      <a class="tab" href="#/alerts" data-tab="alerts">Alerts</a>
+      <a class="tab" href="#/identities" data-tab="identities">Identities</a>
+      <a class="tab" href="#/cases" data-tab="cases">Cases</a>
+    </nav>
+    <div class="token-status" id="token-status"></div>
+  </header>
+
+  <main class="view" id="view" aria-live="polite"></main>
+
+  <!-- Login overlay: token is validated against GET /api/identities, stored in localStorage -->
+  <div class="overlay login-overlay hidden" id="login-overlay" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <div class="login-card">
+      <div class="login-brand">SPECTER&nbsp;<em>X</em></div>
+      <div class="login-sub" id="login-title">Identity Attack Path Investigation</div>
+      <form id="login-form" autocomplete="off">
+        <label class="field-label" for="token-input">API bearer token</label>
+        <input class="token-input" id="token-input" name="token" type="password"
+               placeholder="token from SPECTER_TOKENS" spellcheck="false" autocomplete="off" required>
+        <button class="btn btn-primary btn-block" id="login-submit" type="submit">Authenticate</button>
+        <div class="login-error hidden" id="login-error" role="alert"></div>
+        <p class="login-hint">
+          Tokens are issued server-side via <code>SPECTER_TOKENS</code> (<code>token:role</code> CSV,
+          roles <code>analyst</code>/<code>admin</code>). The token is validated against
+          <code>GET /api/identities</code> and kept in browser localStorage.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Shared modal (respond-action confirm dialogs) -->
+  <div id="modal-root"></div>
+
+  <!-- Toast notifications -->
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <noscript><div class="noscript">SPECTER X requires JavaScript.</div></noscript>
+
+  <!-- Vendored dependency (do not modify). Exposes window.vis { Network, DataSet, ... } -->
+  <script src="./vendor/vis-network.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
