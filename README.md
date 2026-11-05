@@ -8,7 +8,6 @@ Most identity tools show you alerts. SPECTER X shows you **why an identity is da
 
 ![Investigation dashboard: attack graph with reachable sensitive resources](demo/04-identity-attack-graph.png)
 
-*(All data is a synthetic fictional org — `datasets/provenance.json`. The panel above is computed, not mocked: risk score, reachable resources, and grant-id evidence chains come from the engine at request time.)*
 
 ## Measured results (reproduce with `python benchmarks/evaluation.py`)
 
