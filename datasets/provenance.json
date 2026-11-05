@@ -1,0 +1,13 @@
+{
+  "type": "synthetic",
+  "generator": "generator-1.0.0",
+  "seed": 42,
+  "generated_at": "2026-11-05T05:47:06Z",
+  "external_data": "none",
+  "license": "MIT",
+  "notes": [
+    "All identities and organizations are fictional.",
+    "City coordinates are approximations for distance math.",
+    "Attack scenarios emulate documented cloud-identity TTPs (MFA fatigue, OAuth consent abuse, role-grant abuse, service-account takeover)."
+  ]
+}

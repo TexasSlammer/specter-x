@@ -1,0 +1,193 @@
+{
+  "org": "Northstar Health",
+  "generator": "generator-1.0.0",
+  "seed": 42,
+  "reachable_paths": [
+    {
+      "identity_id": "usr-billing.reyes",
+      "resource_id": "res-billing-exports",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": true,
+      "via": "group_allow"
+    },
+    {
+      "identity_id": "usr-marcus.webb",
+      "resource_id": "res-ehr-database",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": true,
+      "via": "group_allow"
+    },
+    {
+      "identity_id": "usr-flores",
+      "resource_id": "res-backup-vault",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "vpn",
+        "time": "14:00"
+      },
+      "expect": true,
+      "via": "trust_assume_chain"
+    },
+    {
+      "identity_id": "svc-ehr-backup",
+      "resource_id": "res-backup-vault",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": true,
+      "via": "resource_policy"
+    },
+    {
+      "identity_id": "usr-billing.reyes",
+      "resource_id": "res-payroll-db",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": true,
+      "via": "consent_delegation"
+    },
+    {
+      "identity_id": "usr-alvarez.exec",
+      "resource_id": "res-hr-portal",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": true,
+      "via": "group_allow"
+    },
+    {
+      "identity_id": "usr-okafor.exec",
+      "resource_id": "res-hr-portal",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": true,
+      "via": "nested_group",
+      "_note": "member of grp-exec-oncall nested inside grp-executives (depth-2 expansion)"
+    }
+  ],
+  "denied_paths": [
+    {
+      "identity_id": "usr-connor.wells",
+      "resource_id": "res-hr-portal",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": false,
+      "reason": "explicit_deny"
+    },
+    {
+      "identity_id": "svc-mail-sync",
+      "resource_id": "res-ehr-database",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": false,
+      "reason": "explicit_deny"
+    },
+    {
+      "identity_id": "usr-billing.dalton",
+      "resource_id": "res-analytics",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "22:00"
+      },
+      "expect": false,
+      "reason": "condition_mismatch"
+    },
+    {
+      "identity_id": "usr-clin.01",
+      "resource_id": "res-payroll-db",
+      "ctx": {
+        "ip": "198.51.100.2",
+        "asn_type": "corporate",
+        "time": "14:00"
+      },
+      "expect": false,
+      "reason": "no_allow_path"
+    },
+    {
+      "identity_id": "usr-flores",
+      "resource_id": "res-backup-vault",
+      "ctx": {
+        "ip": "45.134.20.2",
+        "asn_type": "datacenter",
+        "time": "14:00"
+      },
+      "expect": false,
+      "reason": "condition_mismatch"
+    }
+  ],
+  "attack_scenarios": {
+    "mfa_fatigue": {
+      "events_file": "attack-scenarios/mfa_fatigue.jsonl",
+      "compromised": [
+        "usr-billing.reyes"
+      ],
+      "expected_detections": [
+        "D1_mfa_fatigue",
+        "D2_new_device_signin",
+        "D4_risky_oauth_consent"
+      ],
+      "min_score": 85
+    },
+    "service_account_abuse": {
+      "events_file": "attack-scenarios/service_account_abuse.jsonl",
+      "compromised": [
+        "svc-reporting"
+      ],
+      "expected_detections": [
+        "D6_service_account_interactive"
+      ],
+      "min_score": 40
+    },
+    "impossible_travel": {
+      "events_file": "attack-scenarios/impossible_travel.jsonl",
+      "compromised": [
+        "usr-okafor.exec"
+      ],
+      "expected_detections": [
+        "D3_impossible_travel",
+        "D2_new_device_signin"
+      ],
+      "min_score": 75
+    },
+    "role_grant_abuse": {
+      "events_file": "attack-scenarios/role_grant_abuse.jsonl",
+      "compromised": [
+        "usr-marcus.webb"
+      ],
+      "expected_detections": [
+        "D5_role_assignment_anomaly",
+        "D2_new_device_signin"
+      ],
+      "min_score": 80
+    }
+  },
+  "normal_baseline": {
+    "events_file": "normal/baseline.jsonl",
+    "max_alerts": 3,
+    "expected_detections": []
+  }
+}

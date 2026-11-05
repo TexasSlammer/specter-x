@@ -1,0 +1,810 @@
+{
+  "org": "Northstar Health",
+  "seed": 42,
+  "generator": "generator-1.0.0",
+  "identities": [
+    {
+      "identity_id": "usr-alvarez.exec",
+      "display_name": "R. Alvarez",
+      "kind": "user",
+      "department": "Executive",
+      "privileged": true,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-okafor.exec",
+      "display_name": "C. Okafor",
+      "kind": "user",
+      "department": "Executive",
+      "privileged": true,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-flores",
+      "display_name": "M. Flores",
+      "kind": "user",
+      "department": "IT",
+      "privileged": true,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-chen",
+      "display_name": "K. Chen",
+      "kind": "user",
+      "department": "IT",
+      "privileged": true,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-marcus.webb",
+      "display_name": "M. Webb",
+      "kind": "user",
+      "department": "IT",
+      "privileged": true,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-billing.reyes",
+      "display_name": "Reyes",
+      "kind": "user",
+      "department": "Billing",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-billing.dalton",
+      "display_name": "Dalton",
+      "kind": "user",
+      "department": "Billing",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-billing.kim",
+      "display_name": "Kim",
+      "kind": "user",
+      "department": "Billing",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-billing.patel",
+      "display_name": "Patel",
+      "kind": "user",
+      "department": "Billing",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-billing.moore",
+      "display_name": "Moore",
+      "kind": "user",
+      "department": "Billing",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-billing.santos",
+      "display_name": "Santos",
+      "kind": "user",
+      "department": "Billing",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.01",
+      "display_name": "Clinician 01",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.02",
+      "display_name": "Clinician 02",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.03",
+      "display_name": "Clinician 03",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.04",
+      "display_name": "Clinician 04",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.05",
+      "display_name": "Clinician 05",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.06",
+      "display_name": "Clinician 06",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.07",
+      "display_name": "Clinician 07",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.08",
+      "display_name": "Clinician 08",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.09",
+      "display_name": "Clinician 09",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.10",
+      "display_name": "Clinician 10",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.11",
+      "display_name": "Clinician 11",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-clin.12",
+      "display_name": "Clinician 12",
+      "kind": "user",
+      "department": "Clinical",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-connor.wells",
+      "display_name": "T. Wells",
+      "kind": "user",
+      "department": "Contractor",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "usr-lena.ortiz",
+      "display_name": "L. Ortiz",
+      "kind": "user",
+      "department": "Contractor",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "svc-reporting",
+      "display_name": "Reporting Service",
+      "kind": "service_account",
+      "department": "IT",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "svc-ehr-backup",
+      "display_name": "EHR Backup Job",
+      "kind": "service_account",
+      "department": "IT",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "svc-mail-sync",
+      "display_name": "Mail Sync",
+      "kind": "service_account",
+      "department": "IT",
+      "privileged": false,
+      "city": "San Antonio"
+    },
+    {
+      "identity_id": "svc-scan",
+      "display_name": "Vuln Scanner",
+      "kind": "service_account",
+      "department": "IT",
+      "privileged": false,
+      "city": "San Antonio"
+    }
+  ],
+  "groups": {
+    "it_admins": "grp-it-admins",
+    "billing": "grp-billing",
+    "clinicians": "grp-clinicians",
+    "executives": "grp-executives",
+    "oncall": "grp-exec-oncall",
+    "contractors": "grp-contractors"
+  },
+  "apps": {
+    "mail_sync": "app-mail-sync",
+    "office_helper": "app-office-helper",
+    "reporting": "app-reporting",
+    "payroll_sync": "app-payroll-sync"
+  },
+  "roles": {
+    "breakglass": "role-breakglass"
+  },
+  "resources": [
+    {
+      "resource_id": "res-ehr-database",
+      "label": "EHR Database (PHI)",
+      "kind": "database",
+      "sensitivity": "sensitive"
+    },
+    {
+      "resource_id": "res-billing-exports",
+      "label": "Billing Exports Bucket",
+      "kind": "storage",
+      "sensitivity": "sensitive"
+    },
+    {
+      "resource_id": "res-backup-vault",
+      "label": "Backup Vault",
+      "kind": "storage",
+      "sensitivity": "sensitive"
+    },
+    {
+      "resource_id": "res-hr-portal",
+      "label": "HR Portal",
+      "kind": "webapp",
+      "sensitivity": "sensitive"
+    },
+    {
+      "resource_id": "res-marketing-site",
+      "label": "Marketing Site",
+      "kind": "webapp",
+      "sensitivity": "public"
+    },
+    {
+      "resource_id": "res-wiki",
+      "label": "Internal Wiki",
+      "kind": "webapp",
+      "sensitivity": "internal"
+    },
+    {
+      "resource_id": "res-analytics",
+      "label": "Analytics Warehouse",
+      "kind": "database",
+      "sensitivity": "internal"
+    },
+    {
+      "resource_id": "res-payroll-db",
+      "label": "Payroll Database",
+      "kind": "database",
+      "sensitivity": "sensitive"
+    }
+  ],
+  "grants": [
+    {
+      "grant_id": "grt-5eae6d6c73",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-flores",
+      "to_id": "grp-it-admins",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-d41a8d5175",
+      "kind": "DIRECTORY_ROLE",
+      "from_id": "usr-flores",
+      "to_id": "role-global-admin",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-27f8a8b98f",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-chen",
+      "to_id": "grp-it-admins",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-9b4e4e7689",
+      "kind": "DIRECTORY_ROLE",
+      "from_id": "usr-chen",
+      "to_id": "role-global-admin",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-edaa0fb2f6",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-marcus.webb",
+      "to_id": "grp-it-admins",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-b2756a28e4",
+      "kind": "DIRECTORY_ROLE",
+      "from_id": "usr-marcus.webb",
+      "to_id": "role-global-admin",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-b41ab83101",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-billing.reyes",
+      "to_id": "grp-billing",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-df7a5ea69c",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-billing.dalton",
+      "to_id": "grp-billing",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-18093c1554",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-billing.kim",
+      "to_id": "grp-billing",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-37849f0d60",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-billing.patel",
+      "to_id": "grp-billing",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-8d8d1c3470",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-billing.moore",
+      "to_id": "grp-billing",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-c61b3900f3",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-billing.santos",
+      "to_id": "grp-billing",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-310c108d41",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.01",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-17a4251bbf",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.02",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-84744ccd06",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.03",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-d3211a9f54",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.04",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-90aa91a0ed",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.05",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-c1e1d3ec14",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.06",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-4a61a836c0",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.07",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-519bba3a71",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.08",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-59d7fb1589",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.09",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-1d23f8a550",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.10",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-6c84c63230",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.11",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-bee6d8e4a3",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-clin.12",
+      "to_id": "grp-clinicians",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-b76426b472",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-connor.wells",
+      "to_id": "grp-contractors",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-38f0351931",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-lena.ortiz",
+      "to_id": "grp-contractors",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-ca2b26d876",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-alvarez.exec",
+      "to_id": "grp-executives",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-f6c2848adb",
+      "kind": "GROUP_MEMBER",
+      "from_id": "usr-okafor.exec",
+      "to_id": "grp-exec-oncall",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-1636161daa",
+      "kind": "GROUP_MEMBER",
+      "from_id": "grp-exec-oncall",
+      "to_id": "grp-executives",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-bd83d21505",
+      "kind": "IDENTITY_POLICY_ALLOW",
+      "from_id": "grp-billing",
+      "to_id": "res-billing-exports",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": {
+        "time_window": "00:00-23:59"
+      },
+      "verified": true
+    },
+    {
+      "grant_id": "grt-624e433ea8",
+      "kind": "IDENTITY_POLICY_ALLOW",
+      "from_id": "grp-billing",
+      "to_id": "res-analytics",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": {
+        "time_window": "08:00-18:00"
+      },
+      "verified": true
+    },
+    {
+      "grant_id": "grt-1cb619e2de",
+      "kind": "IDENTITY_POLICY_ALLOW",
+      "from_id": "grp-it-admins",
+      "to_id": "res-ehr-database",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-f461f3ed1e",
+      "kind": "IDENTITY_POLICY_ALLOW",
+      "from_id": "grp-it-admins",
+      "to_id": "res-backup-vault",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-7194882566",
+      "kind": "IDENTITY_POLICY_ALLOW",
+      "from_id": "grp-executives",
+      "to_id": "res-hr-portal",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-deny-contractor-hr",
+      "kind": "IDENTITY_POLICY_DENY",
+      "from_id": "usr-connor.wells",
+      "to_id": "res-hr-portal",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-deny-mailsvc-ehr",
+      "kind": "IDENTITY_POLICY_DENY",
+      "from_id": "svc-mail-sync",
+      "to_id": "res-ehr-database",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-da29e0d1b8",
+      "kind": "IDENTITY_POLICY_ALLOW",
+      "from_id": "grp-contractors",
+      "to_id": "res-marketing-site",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-17ad6dcca0",
+      "kind": "IDENTITY_POLICY_ALLOW",
+      "from_id": "grp-contractors",
+      "to_id": "res-wiki",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-rp-backup-svc",
+      "kind": "RESOURCE_POLICY",
+      "from_id": "res-backup-vault",
+      "to_id": "svc-ehr-backup",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-5faf3ea667",
+      "kind": "TRUST_ASSUME",
+      "from_id": "grp-it-admins",
+      "to_id": "role-breakglass",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": {
+        "asn_type_in": [
+          "corporate",
+          "vpn"
+        ]
+      },
+      "verified": true
+    },
+    {
+      "grant_id": "grt-breakglass-backup",
+      "kind": "IDENTITY_POLICY_ALLOW",
+      "from_id": "role-breakglass",
+      "to_id": "res-backup-vault",
+      "resource_id": null,
+      "scopes": null,
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-edefa288f2",
+      "kind": "APP_CONSENT",
+      "from_id": "grp-clinicians",
+      "to_id": "app-mail-sync",
+      "resource_id": null,
+      "scopes": [
+        "Mail.Read"
+      ],
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-97b43974e3",
+      "kind": "APP_CONSENT",
+      "from_id": "grp-billing",
+      "to_id": "app-reporting",
+      "resource_id": null,
+      "scopes": [
+        "Reports.Read"
+      ],
+      "conditions": null,
+      "verified": true
+    },
+    {
+      "grant_id": "grt-consent-office-helper",
+      "kind": "APP_CONSENT",
+      "from_id": "usr-billing.reyes",
+      "to_id": "app-office-helper",
+      "resource_id": null,
+      "scopes": [
+        "Files.ReadWrite.All"
+      ],
+      "conditions": null,
+      "verified": false
+    },
+    {
+      "grant_id": "grt-6138da09d2",
+      "kind": "APP_CONSENT",
+      "from_id": "grp-it-admins",
+      "to_id": "app-payroll-sync",
+      "resource_id": null,
+      "scopes": [
+        "Files.ReadWrite.All"
+      ],
+      "conditions": null,
+      "verified": true
+    }
+  ],
+  "scope_resources": {
+    "Files.ReadWrite.All": [
+      "res-billing-exports",
+      "res-payroll-db"
+    ],
+    "Mail.ReadWrite": [
+      "res-wiki"
+    ]
+  },
+  "cities": {
+    "San Antonio": [
+      29.42,
+      -98.49
+    ],
+    "Austin": [
+      30.27,
+      -97.74
+    ],
+    "Dallas": [
+      32.78,
+      -96.8
+    ],
+    "Houston": [
+      29.76,
+      -95.37
+    ],
+    "Berlin": [
+      52.52,
+      13.4
+    ],
+    "Lagos": [
+      6.52,
+      3.37
+    ]
+  }
+}
